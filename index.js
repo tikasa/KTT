@@ -51,7 +51,7 @@ function piirraMustaPuikula(x,y){
 
     ctx.beginPath();
     ctx.translate((x+15),(y+30)); 
-    ctx.rotate((Math.PI / 180) * 35);
+    ctx.rotate((Math.PI / 180) * 30);
     ctx.scale(0.5,1);
     ctx.arc(0,0,30,0,Math.PI*2,true);   
     ctx.fill();
@@ -64,7 +64,7 @@ function piirraValkeaPuikula(x,y){
 
     ctx.beginPath();
     ctx.translate((x+15),(y+30));  
-    ctx.rotate((Math.PI / 180) * 35);
+    ctx.rotate((Math.PI / 180) * 30);
     ctx.scale(0.5,1);
     ctx.arc(0,0,30,0,Math.PI*2,true);   
     ctx.stroke();
@@ -77,7 +77,7 @@ function piirraMustaPuikulaTaakse(x,y){
 
     ctx.beginPath();
     ctx.translate((x+15),(y+30));
-    ctx.rotate((Math.PI / 180) * -35);
+    ctx.rotate((Math.PI / 180) * -30);
     ctx.scale(0.5,1);
     ctx.arc(0,0,30,0,Math.PI*2,true);   
     ctx.fill();
@@ -89,7 +89,7 @@ function piirraValkeaPuikulaTaakse(x,y){
 
     ctx.beginPath();
     ctx.translate((x+15),(y+30));   
-    ctx.rotate((Math.PI / 180) * -35);
+    ctx.rotate((Math.PI / 180) * -30);
     ctx.scale(0.5,1);
     ctx.arc(0,0,30,0,Math.PI*2,true);   
     ctx.stroke();
@@ -113,10 +113,10 @@ for(i=0;i<6;i++){
     console.log(x);
 }
 piirraMustaPuikula(80,35);
-piirraValkeaPuikula(120,35);
-piirraMustaPuikula(160,35)
-piirraValkeaPuikula(200,35);
+piirraValkeaPuikula(125,35);
+piirraMustaPuikula(170,35)
+piirraValkeaPuikula(215,35);
 
 
-piirraValkeaPuikulaTaakse(250,35);
+piirraValkeaPuikulaTaakse(260,35);
 
