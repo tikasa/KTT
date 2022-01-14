@@ -1,11 +1,20 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
+const btnRight = document.getElementById('create-right');
+const btnLeft = document.getElementById('create-left')
 
 const oikea=1;
-const vasen =2;
-
+const vasen=2;
 const musta=3;
 const valkea=4;
+
+btnRight.addEventListener('click', ()=>{
+    piirraPuikula(20,20,oikea, valkea);
+});
+
+btnLeft.addEventListener('click', ()=>{
+    piirraPuikula(60,20,vasen,valkea);
+});
 
 function piirraPuikula(x,y,z,d){
     ctx.strokeStyle='black';
@@ -43,57 +52,57 @@ function piirraPuikula(x,y,z,d){
 
 
 
-function piirraMustaPuikula(x,y){
+// function piirraMustaPuikula(x,y){
 
-    ctx.fillStyle='black';
+//     ctx.fillStyle='black';
 
-    ctx.beginPath();
-    ctx.translate((x+15),(y+30)); 
-    ctx.rotate((Math.PI / 180) * 30);
-    ctx.scale(0.5,1);
-    ctx.arc(0,0,30,0,Math.PI*2,true);   
-    ctx.fill();
-    ctx.resetTransform();
-}
+//     ctx.beginPath();
+//     ctx.translate((x+15),(y+30)); 
+//     ctx.rotate((Math.PI / 180) * 30);
+//     ctx.scale(0.5,1);
+//     ctx.arc(0,0,30,0,Math.PI*2,true);   
+//     ctx.fill();
+//     ctx.resetTransform();
+// }
 
-function piirraValkeaPuikula(x,y){
+// function piirraValkeaPuikula(x,y){
 
-    ctx.strokeStyle='black';
+//     ctx.strokeStyle='black';
 
-    ctx.beginPath();
-    ctx.translate((x+15),(y+30));  
-    ctx.rotate((Math.PI / 180) * 30);
-    ctx.scale(0.5,1);
-    ctx.arc(0,0,30,0,Math.PI*2,true);   
-    ctx.stroke();
-    ctx.resetTransform();
-}
+//     ctx.beginPath();
+//     ctx.translate((x+15),(y+30));  
+//     ctx.rotate((Math.PI / 180) * 30);
+//     ctx.scale(0.5,1);
+//     ctx.arc(0,0,30,0,Math.PI*2,true);   
+//     ctx.stroke();
+//     ctx.resetTransform();
+// }
 
-function piirraMustaPuikulaTaakse(x,y){
+// function piirraMustaPuikulaTaakse(x,y){
 
-    ctx.fillStyle='black';
+//     ctx.fillStyle='black';
 
-    ctx.beginPath();
-    ctx.translate((x+15),(y+30));
-    ctx.rotate((Math.PI / 180) * -30);
-    ctx.scale(0.5,1);
-    ctx.arc(0,0,30,0,Math.PI*2,true);   
-    ctx.fill();
-    ctx.resetTransform();
-}
+//     ctx.beginPath();
+//     ctx.translate((x+15),(y+30));
+//     ctx.rotate((Math.PI / 180) * -30);
+//     ctx.scale(0.5,1);
+//     ctx.arc(0,0,30,0,Math.PI*2,true);   
+//     ctx.fill();
+//     ctx.resetTransform();
+// }
 
-function piirraValkeaPuikulaTaakse(x,y){
-    ctx.srokeStyle='black';
+// function piirraValkeaPuikulaTaakse(x,y){
+//     ctx.srokeStyle='black';
 
-    ctx.beginPath();
-    ctx.translate((x+15),(y+30));   
-    ctx.rotate((Math.PI / 180) * -30);
-    ctx.scale(0.5,1);
-    ctx.arc(0,0,30,0,Math.PI*2,true);   
-    ctx.stroke();
-    ctx.resetTransform()
+//     ctx.beginPath();
+//     ctx.translate((x+15),(y+30));   
+//     ctx.rotate((Math.PI / 180) * -30);
+//     ctx.scale(0.5,1);
+//     ctx.arc(0,0,30,0,Math.PI*2,true);   
+//     ctx.stroke();
+//     ctx.resetTransform()
 
-}
+// }
 
 
 

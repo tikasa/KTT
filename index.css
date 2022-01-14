@@ -1,0 +1,17 @@
+canvas{
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
+    
+}
+.nappi{
+    font-weight: bold;
+    cursor:pointer;
+}
+#create-left{
+
+}
+
+#create-right{
+    
+}
